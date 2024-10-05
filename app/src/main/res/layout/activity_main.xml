@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mapa"
+    tools:context=".MainActivity">
+
+    <!-- Contenedor blanco en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Texto de Bienvenida -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="¡BIENVENIDO A ADVENTURE TRAVELS!"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp" />
+
+        <!-- Subtítulo con descripción -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abre las puertas a nuevas aventuras. Prepárate para vivir momentos únicos y descubrir lugares que nunca imaginaste."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Botones de Ingresar y Registrarse -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/black"
+                android:text="Ingresar"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp" />
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="Registrarse"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

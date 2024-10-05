@@ -1,0 +1,215 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+  <!-- Sección que va dentro de un ScrollView -->
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <EditText
+          android:id="@+id/search_input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Buscar..."
+          android:padding="10dp"
+          android:background="@drawable/edittext_background"/>
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Bienvenido a ADVENTURE TRAVELS"
+          android:textSize="18sp"
+          android:padding="8dp"
+          android:textColor="@android:color/holo_blue_dark"/>
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginBottom="16dp"
+              android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_accommodation"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kjkjk"/>
+
+            <TextView
+                android:id="@+id/details_accommodation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="ALOJAMIENTOS"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price_accommodation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Precio: variable"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginBottom="16dp"
+              android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_tours"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kjkjkjkj" />
+
+            <TextView
+                android:id="@+id/details_tours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="TOURS"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price_tours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Precio: variable"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginBottom="16dp"
+              android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_excursion"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hhgh"/>
+
+            <TextView
+                android:id="@+id/details_excursion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="FULLDAY-EXCURSION"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price_excursion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Precio: variable"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"/>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginBottom="16dp"
+              android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_food"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ww"/>
+
+            <TextView
+                android:id="@+id/details_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="ALIMENTACION"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Precio: variable"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"/>
+
+
+          </LinearLayout>
+        </LinearLayout>
+      </HorizontalScrollView>
+    </LinearLayout>
+  </ScrollView>
+
+  <!-- Lista de lugares, fuera del ScrollView para que funcione su desplazamiento -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="HOY"
+      android:textSize="18sp"
+      android:paddingTop="16dp"
+      android:textStyle="bold"
+      android:gravity="center"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_view_places"
+      android:layout_width="match_parent"
+      android:layout_height="463dp"
+      android:layout_marginTop="16dp"
+      android:scrollbars="vertical" />
+</LinearLayout>
